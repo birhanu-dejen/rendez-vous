@@ -1,9 +1,17 @@
 import Image from "next/image";
+import { Knewave } from "next/font/google";
+const knewave = Knewave({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-knewave",
+});
 
 export default function HotelServices() {
   return (
     <section className="px-4 bg-[#F5F5F5] py-22 md:px-16">
-      <h2 className="text-2xl italic font-bold text-center my-18 md:text-3xl">
+      <h2
+        className={`${knewave.className} text-2xl italic font-bold text-center my-18 md:text-3xl`}
+      >
         Hotel Services
       </h2>
 
