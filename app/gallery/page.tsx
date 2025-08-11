@@ -1,5 +1,11 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: "Gallery",
+  description:
+    "Browse the stunning photo gallery showcasing Rendez-Vous Hotel and its exceptional services in Addis Ababa, Ethiopia.",
+};
+
 export default function GalleryPage() {
   return (
     <div className="max-w-6xl mx-auto space-y-10 py-35 ">

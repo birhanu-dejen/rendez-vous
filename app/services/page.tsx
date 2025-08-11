@@ -1,6 +1,10 @@
 import Image from "next/image";
 import { Kalam, Knewave } from "next/font/google";
 
+export const metadata = {
+  title: "Services",
+  description: "Description specific to Services page.",
+};
 const kalam = Kalam({ subsets: ["latin"], weight: ["400"] });
 const knewave = Knewave({
   subsets: ["latin"],
