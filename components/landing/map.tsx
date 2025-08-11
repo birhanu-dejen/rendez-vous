@@ -27,9 +27,13 @@ export default function MapSection() {
             <h3 className="text-2xl font-semibold mb-4 text-[#1E5631]">
               Rendez-Vous Hotel
             </h3>
-            <p className="mb-4 text-gray-700">📍 Bole, Addis Ababa, Ethiopia</p>
-            <p className="mb-4 text-gray-700">📞 +251-11-123-4567</p>
-            <p className="mb-6 text-gray-700">✉️ info@rendezvoushotel.com</p>
+            <p className="mb-4 text-gray-700">
+              📍 On Ethio China St., in front of Wengelawit Building{" "}
+            </p>
+            <p className="mb-4 text-gray-700">📞 +251903232323</p>
+            <p className="mb-4 text-gray-700">📞+251911252610</p>
+
+            <p className="mb-6 text-gray-700">✉️Justteshome3@gmail.com </p>
             <a
               href="https://maps.google.com/?q=Rendez-Vous+Hotel+Addis+Ababa"
               target="_blank"

@@ -55,7 +55,7 @@ export default function Services() {
           alt="Room"
           width={500}
           height={300}
-          className="rounded-lg"
+          className="rounded-lg h-110"
         />
       </div>
 

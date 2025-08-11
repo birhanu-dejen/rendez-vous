@@ -15,12 +15,12 @@ const Description = () => {
         </h2>
         <p className="mb-6 text-3xl italic leading-tight md:text-justify">
           RENDEZ-VOUS Hotel in Addis Ababa offers a comfortable stay in the
-          capital. Located near Ethio Cinema, it’s ideal for business and
-          leisure travelers. Enjoy clean, quiet rooms and excellent value close
-          to cultural landmarks. We blend modern amenities with warm Ethiopian
-          hospitality. Our guests benefit from a peaceful atmosphere and
-          personalized service. Experience the vibrant attractions and business
-          districts of Addis Ababa.
+          capital. Located On Ethio China St., in front of Wengelawit Building ,
+          it’s ideal for business and leisure travelers. Enjoy clean, quiet
+          rooms and excellent value close to cultural landmarks. We blend modern
+          amenities with warm Ethiopian hospitality. Our guests benefit from a
+          peaceful atmosphere and personalized service. Experience the vibrant
+          attractions and business districts of Addis Ababa.
         </p>
       </div>
     </section>
