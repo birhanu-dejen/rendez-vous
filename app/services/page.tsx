@@ -1,14 +1,26 @@
 import Image from "next/image";
+import { Kalam, Knewave } from "next/font/google";
+
+const kalam = Kalam({ subsets: ["latin"], weight: ["400"] });
+const knewave = Knewave({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-knewave",
+});
 
 export default function Services() {
   return (
     <div className="max-w-6xl px-4 py-12 mx-auto space-y-16 md:px-16">
       {/* Header */}
       <div className="space-y-4 text-center">
-        <h1 className="text-2xl italic font-bold md:text-3xl">
+        <h1
+          className={`${knewave.className} text-4xl italic font-bold text-black opacity-100 md:text-3xl`}
+        >
           RENDEZ-VOUS Hotel
         </h1>
-        <p className="max-w-3xl mx-auto text-gray-700">
+        <p
+          className={`${kalam.className} max-w-3xl mx-auto text-[32px] leading-normal tracking-normal text-black  opacity-100 text-justify`}
+        >
           Our hotel is the perfect choice whether you are visiting Addis Ababa
           for business, leisure, or a special getaway. With years of experience
           providing excellent service to guests from across Ethiopia and beyond,
@@ -20,8 +32,14 @@ export default function Services() {
       {/* Rooms Section */}
       <div className="grid items-center gap-8 md:grid-cols-2">
         <div>
-          <h2 className="mb-2 text-xl italic font-bold">Rooms</h2>
-          <p className="text-gray-700">
+          <h2
+            className={`${knewave.className} mb-2 text-3xl italic font-bold text-black text-center`}
+          >
+            Rooms
+          </h2>
+          <p
+            className={`${kalam.className} text-[32px] leading-normal tracking-normal text-black  opacity-100 text-justify`}
+          >
             Rooms at our hotel offer 26 individually-themed rooms, each with
             high quality, accommodations. Rooms include large baths, power
             showers and excellent room services. Choose affordable luxury and
@@ -47,8 +65,14 @@ export default function Services() {
           className="rounded-lg"
         />
         <div>
-          <h2 className="mb-2 text-xl italic font-bold">Restaurant</h2>
-          <p className="text-gray-700">
+          <h2
+            className={`${knewave.className} mb-2 text-3xl italic font-bold text-black text-center`}
+          >
+            Restaurant
+          </h2>
+          <p
+            className={`${kalam.className} text-[32px] leading-normal tracking-normal text-black  opacity-100 text-justify`}
+          >
             Sink in to our comfy sofas with a well-deserved drink and enjoy our
             Bar. Enjoy our superb wine list, premium beers and spirits from our
             menu, or arrange a bottle of champagne on ice for your arrival.
@@ -59,8 +83,14 @@ export default function Services() {
       {/* Breakfast Section */}
       <div className="grid items-center gap-8 md:grid-cols-2">
         <div>
-          <h2 className="mb-2 text-xl italic font-bold">Breakfast</h2>
-          <p className="text-gray-700">
+          <h2
+            className={`${knewave.className} mb-2 text-3xl italic font-bold text-black text-center`}
+          >
+            Breakfast
+          </h2>
+          <p
+            className={`${kalam.className} text-[32px] leading-normal tracking-normal text-black  opacity-100 text-justify`}
+          >
             Breakfast is typically cooked from 7:30 am until 9:00 am on a
             weekday morning and 8:30 am until 10:00 am on a weekend. While you
             wait for your breakfast, why not try our snack bar.
@@ -85,8 +115,14 @@ export default function Services() {
           className="rounded-lg"
         />
         <div>
-          <h2 className="mb-2 text-xl italic font-bold">RENDEZ-VOUS Hotel</h2>
-          <p className="text-gray-700">
+          <h2
+            className={`${knewave.className} mb-2 text-3xl italic font-bold text-black text-center`}
+          >
+            RENDEZ-VOUS Hotel
+          </h2>
+          <p
+            className={`${kalam.className} text-[32px] leading-normal tracking-normal text-black  opacity-100 text-justify`}
+          >
             We have more than 10 years of experience in providing excellent
             services to customers, and our stunning boutique hotel has left a
             lasting impression on countless customers.

@@ -5,7 +5,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import LogoLink from "../logo";
 import { Link as ScrollLink } from "react-scroll";
-import { Menu, X } from "lucide-react"; // lightweight icon library, install if you don't have: `npm i lucide-react`
+import { Menu, X } from "lucide-react";
+import { Kalam } from "next/font/google";
+
+const kalam = Kalam({ subsets: ["latin"], weight: ["400"] });
 
 export default function Header() {
   const pathname = usePathname();
@@ -13,7 +16,7 @@ export default function Header() {
 
   const isActive = (path: string) => pathname === path;
 
-  const baseClasses = "text-[#333333] text-3xl font-kalam hover:text-blue-600";
+  const baseClasses = "text-[#333333] text-3xl hover:text-blue-600"; // removed font-kalam here
   const activeClasses = "underline text-blue-600";
 
   const toggleMobileMenu = () => setMobileMenuOpen((open) => !open);
@@ -62,7 +65,9 @@ export default function Header() {
         <LogoLink />
 
         {/* Desktop nav */}
-        <nav className="hidden space-x-8 md:flex">{NavLinks}</nav>
+        <nav className={`${kalam.className} hidden space-x-8 md:flex`}>
+          {NavLinks}
+        </nav>
 
         {/* Mobile hamburger menu button */}
         <button
@@ -76,7 +81,9 @@ export default function Header() {
 
       {/* Mobile menu panel */}
       {mobileMenuOpen && (
-        <nav className="md:hidden bg-[#EAE1D6] px-6 pb-6 space-y-6 flex flex-col items-center text-center">
+        <nav
+          className={`${kalam.className} md:hidden bg-[#EAE1D6] px-6 pb-6 space-y-6 flex flex-col items-center text-center`}
+        >
           {NavLinks}
         </nav>
       )}
