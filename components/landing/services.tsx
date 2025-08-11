@@ -11,7 +11,7 @@ export default function HotelServices() {
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         <div className="relative">
           <Image
-            src="/images/hero/frame1.jpg"
+            src="/images/hero/Frame1.jpg"
             alt="frame1"
             width={500}
             height={300}
@@ -24,7 +24,7 @@ export default function HotelServices() {
 
         <div className="relative">
           <Image
-            src="/images/hero/frame2.jpg"
+            src="/images/hero/Frame2.jpg"
             alt="frame2"
             width={500}
             height={300}
@@ -37,7 +37,7 @@ export default function HotelServices() {
 
         <div className="relative">
           <Image
-            src="/images/hero/frame3.jpg"
+            src="/images/hero/Frame3.jpg"
             alt="frame3"
             width={500}
             height={300}
@@ -54,7 +54,7 @@ export default function HotelServices() {
         {" "}
         {/* my-6 = margin-top & margin-bottom */}
         <Image
-          src="/images/hero/frame4.jpg"
+          src="/images/hero/Frame4.jpg"
           alt="frame4"
           width={1200}
           height={450}
@@ -67,7 +67,7 @@ export default function HotelServices() {
       <div className="grid grid-cols-1 gap-6 mt-6 md:grid-cols-2">
         <div className="relative">
           <Image
-            src="/images/hero/frame5.jpg"
+            src="/images/hero/Frame5.jpg"
             alt="frame5"
             width={1068} // customized width
             height={600} // customized height
@@ -78,7 +78,7 @@ export default function HotelServices() {
 
         <div className="relative">
           <Image
-            src="/images/hero/frame6.jpg"
+            src="/images/hero/Frame6.jpg"
             alt="frame6"
             width={600}
             height={350}
