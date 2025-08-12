@@ -60,7 +60,7 @@ export default function Header() {
 
   return (
     <header className="bg-[#EAE1D6]">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-14 h-[120px]">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-14 h-[80px] md:h-[120px]">
         {/* Logo */}
         <LogoLink />
 

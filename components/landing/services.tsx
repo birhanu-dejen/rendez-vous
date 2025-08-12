@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Knewave } from "next/font/google";
+
 const knewave = Knewave({
   subsets: ["latin"],
   weight: ["400"],
@@ -8,22 +9,22 @@ const knewave = Knewave({
 
 export default function HotelServices() {
   return (
-    <section className="px-4 bg-[#F5F5F5] py-22 md:px-16">
+    <section className="px-4 bg-[#F5F5F5] py-12 md:px-16">
       <h2
-        className={`${knewave.className} text-2xl  font-bold text-center my-18 md:text-4xl`}
+        className={`${knewave.className} text-2xl font-bold text-center my-6 md:text-4xl md:my-18`}
       >
         Hotel Services
       </h2>
 
       {/* First row - three images */}
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-3 md:grid-cols-3 md:gap-6">
         <div className="relative">
           <Image
             src="/images/hero/Frame1.jpg"
             alt="frame1"
             width={500}
             height={300}
-            className="object-cover w-full rounded-lg h-120"
+            className="object-cover w-full rounded-lg h-60 md:h-120"
           />
           <p className="absolute px-2 py-1 text-sm text-black bg-white rounded bottom-2 left-2 bg-opacity-60">
             title.
@@ -36,7 +37,7 @@ export default function HotelServices() {
             alt="frame2"
             width={500}
             height={300}
-            className="object-cover w-full rounded-lg h-120"
+            className="object-cover w-full rounded-lg h-60 md:h-120"
           />
           <p className="absolute px-2 py-1 text-sm text-black bg-white rounded bottom-2 left-2 bg-opacity-60">
             title.
@@ -49,7 +50,7 @@ export default function HotelServices() {
             alt="frame3"
             width={500}
             height={300}
-            className="object-cover w-full rounded-lg h-120"
+            className="object-cover w-full rounded-lg h-60 md:h-120"
           />
           <p className="absolute px-2 py-1 text-sm text-black bg-white rounded bottom-2 left-2 bg-opacity-60">
             title.
@@ -58,30 +59,28 @@ export default function HotelServices() {
       </div>
 
       {/* Large featured image */}
-      <div className="my-25">
-        {" "}
-        {/* my-6 = margin-top & margin-bottom */}
+      <div className="my-6 md:my-25">
         <Image
           src="/images/hero/Frame4.jpg"
           alt="frame4"
           width={1200}
           height={450}
-          className="object-cover w-full rounded-lg h-[450px]"
+          className="object-cover w-full rounded-lg h-[250px] md:h-[450px]"
         />
-        <p className="mt-2 text-sm ">Feature title.</p>
+        <p className="mt-2 text-sm">Feature title.</p>
       </div>
 
       {/* Last two images side by side */}
-      <div className="grid grid-cols-1 gap-6 mt-6 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-3 mt-6 md:grid-cols-2 md:gap-6">
         <div className="relative">
           <Image
             src="/images/hero/Frame5.jpg"
             alt="frame5"
-            width={1068} // customized width
-            height={600} // customized height
-            className="object-cover w-full h-[600px] rounded-lg"
+            width={1068}
+            height={600}
+            className="object-cover w-full h-[300px] md:h-[600px] rounded-lg"
           />
-          <p className="mt-2 text-sm ">Feature title.</p>
+          <p className="mt-2 text-sm">Feature title.</p>
         </div>
 
         <div className="relative">
@@ -90,9 +89,9 @@ export default function HotelServices() {
             alt="frame6"
             width={600}
             height={350}
-            className="object-cover w-full h-[600px] rounded-lg"
+            className="object-cover w-full h-[300px] md:h-[600px] rounded-lg"
           />
-          <p className="mt-2 text-sm ">Feature title.</p>
+          <p className="mt-2 text-sm">Feature title.</p>
         </div>
       </div>
     </section>

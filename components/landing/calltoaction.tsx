@@ -12,21 +12,26 @@ const knewave = Knewave({
 
 export default function CallToAction() {
   return (
-    <section className="bg-[#EAE1D6] py-25 px-6">
+    <section className="bg-[#EAE1D6] py-12 px-6 md:py-25 md:px-6">
       <div className={`max-w-3xl mx-auto text-center ${kalam.className}`}>
         {/* Title */}
-        <h2 className={`mb-6 text-4xl  font-bold ${knewave.className}`}>
+        <h2
+          className={`mb-6 text-2xl font-bold md:text-4xl ${knewave.className}`}
+        >
           Stay in Comfort
         </h2>
 
         {/* Main text */}
-        <p className={`mb-8 text-3xl ${kalam.className}`}>
+        <p className={`mb-8 text-lg md:text-3xl ${kalam.className}`}>
           Whether you're traveling alone, with family, or on business, our rooms
           provide the essentials for a restful night in Addis Ababa.
         </p>
+
         {/* Footer line */}
-        <div className="flex flex-col items-center justify-between text-lg sm:flex-row">
-          <p className={`mb-4 text-3xl sm:mb-0 ${kalam.className}`}>
+        <div className="flex flex-col items-center justify-center gap-6 text-lg sm:flex-row sm:justify-between">
+          <p
+            className={`text-lg md:text-3xl ${kalam.className} text-center sm:text-left`}
+          >
             Have you questions or want <br />
             to book your stay?
           </p>
@@ -39,7 +44,7 @@ export default function CallToAction() {
             role="button"
             tabIndex={0}
             onClick={() => {}} // optional noop handler
-            className={`cursor-pointer px-14 py-5  font-bold text-white text-4xl bg-black hover:underline rounded-full ${knewave.className}`}
+            className={`cursor-pointer px-8 py-3 md:px-14 md:py-5 font-bold text-white text-xl md:text-4xl bg-black hover:underline rounded-full ${knewave.className}`}
           >
             Book Now
           </ScrollLink>

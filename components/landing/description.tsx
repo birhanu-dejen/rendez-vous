@@ -20,7 +20,7 @@ const Description = () => {
         </h2>
         <p
           style={{ wordSpacing: "8px" }}
-          className="mb-6 text-3xl text-gray-300 md:text-justify"
+          className="mb-6 text-xl text-justify text-gray-300 md:text-3xl"
         >
           RENDEZ-VOUS Hote lin Addis Ababa Your Comfortable Stay in the Capital
           City RENDEZ-VOUS Hotel is one of the top hospitality choices in Addis
