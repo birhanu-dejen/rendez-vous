@@ -1,9 +1,17 @@
+import { Knewave } from "next/font/google";
+const knewave = Knewave({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-knewave",
+});
 export default function MapSection() {
   return (
     <section className="bg-[#FAF6F0] py-16 px-6">
       <div className="mx-auto max-w-7xl">
         {/* Title */}
-        <h2 className="mb-10 text-3xl font-bold italic text-center text-[#1E5631]">
+        <h2
+          className={`${knewave.className} mb-10 text-4xl font-bold  text-center text-black`}
+        >
           Find Us
         </h2>
 

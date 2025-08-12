@@ -5,6 +5,7 @@ export const metadata = {
   title: "Services",
   description: "Description specific to Services page.",
 };
+
 const kalam = Kalam({ subsets: ["latin"], weight: ["400"] });
 const knewave = Knewave({
   subsets: ["latin"],
@@ -18,12 +19,12 @@ export default function Services() {
       {/* Header */}
       <div className="space-y-4 text-center">
         <h1
-          className={`${knewave.className} text-4xl italic font-bold text-black opacity-100 md:text-3xl`}
+          className={`${knewave.className} text-xl md:text-2xl font-bold text-black opacity-100 md:text-4xl`}
         >
           RENDEZ-VOUS Hotel
         </h1>
         <p
-          className={`${kalam.className} max-w-3xl mx-auto text-[32px] leading-normal tracking-normal text-black  opacity-100 text-justify`}
+          className={`${kalam.className} max-w-3xl mx-auto text-lg md:text-[32px] leading-normal tracking-normal text-black opacity-100 text-justify`}
         >
           Our hotel is the perfect choice whether you are visiting Addis Ababa
           for business, leisure, or a special getaway. With years of experience
@@ -34,15 +35,15 @@ export default function Services() {
       </div>
 
       {/* Rooms Section */}
-      <div className="grid items-center gap-8 md:grid-cols-2">
+      <div className="grid items-center grid-cols-2 gap-8">
         <div>
           <h2
-            className={`${knewave.className} mb-2 text-3xl italic font-bold text-black text-center`}
+            className={`${knewave.className} mb-2 text-xl md:text-4xl font-bold text-black text-center`}
           >
             Rooms
           </h2>
           <p
-            className={`${kalam.className} text-[32px] leading-normal tracking-normal text-black  opacity-100 text-justify`}
+            className={`${kalam.className} text-lg md:text-[32px] leading-normal tracking-normal text-black opacity-100 text-justify`}
           >
             Rooms at our hotel offer 26 individually-themed rooms, each with
             high quality, accommodations. Rooms include large baths, power
@@ -60,7 +61,7 @@ export default function Services() {
       </div>
 
       {/* Restaurant Section */}
-      <div className="grid items-center gap-8 md:grid-cols-2 md:flex-row-reverse">
+      <div className="grid flex-row-reverse items-center grid-cols-2 gap-8">
         <Image
           src="/images/services/food1.jpg"
           alt="Restaurant"
@@ -70,12 +71,12 @@ export default function Services() {
         />
         <div>
           <h2
-            className={`${knewave.className} mb-2 text-3xl italic font-bold text-black text-center`}
+            className={`${knewave.className} mb-2 text-xl md:text-4xl font-bold text-black text-center`}
           >
             Restaurant
           </h2>
           <p
-            className={`${kalam.className} text-[32px] leading-normal tracking-normal text-black  opacity-100 text-justify`}
+            className={`${kalam.className} text-lg md:text-[32px] leading-normal tracking-normal text-black opacity-100 text-justify`}
           >
             Sink in to our comfy sofas with a well-deserved drink and enjoy our
             Bar. Enjoy our superb wine list, premium beers and spirits from our
@@ -85,15 +86,15 @@ export default function Services() {
       </div>
 
       {/* Breakfast Section */}
-      <div className="grid items-center gap-8 md:grid-cols-2">
+      <div className="grid items-center grid-cols-2 gap-8">
         <div>
           <h2
-            className={`${knewave.className} mb-2 text-3xl italic font-bold text-black text-center`}
+            className={`${knewave.className} mb-2 text-xl md:text-4xl font-bold text-black text-center`}
           >
             Breakfast
           </h2>
           <p
-            className={`${kalam.className} text-[32px] leading-normal tracking-normal text-black  opacity-100 text-justify`}
+            className={`${kalam.className} text-lg md:text-[32px] leading-normal tracking-normal text-black opacity-100 text-justify`}
           >
             Breakfast is typically cooked from 7:30 am until 9:00 am on a
             weekday morning and 8:30 am until 10:00 am on a weekend. While you
@@ -110,7 +111,7 @@ export default function Services() {
       </div>
 
       {/* Final Section */}
-      <div className="grid items-center gap-8 md:grid-cols-2 md:flex-row-reverse">
+      <div className="grid flex-row-reverse items-center grid-cols-2 gap-8">
         <Image
           src="/images/services/bdg1.jpg"
           alt="Hotel Building"
@@ -120,12 +121,12 @@ export default function Services() {
         />
         <div>
           <h2
-            className={`${knewave.className} mb-2 text-3xl italic font-bold text-black text-center`}
+            className={`${knewave.className} mb-2 text-xl md:text-4xl font-bold text-black text-center`}
           >
             RENDEZ-VOUS Hotel
           </h2>
           <p
-            className={`${kalam.className} text-[32px] leading-normal tracking-normal text-black  opacity-100 text-justify`}
+            className={`${kalam.className} text-lg md:text-[32px] leading-normal tracking-normal text-black opacity-100 text-justify`}
           >
             We have more than 10 years of experience in providing excellent
             services to customers, and our stunning boutique hotel has left a

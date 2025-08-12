@@ -10,7 +10,7 @@ export default function HotelServices() {
   return (
     <section className="px-4 bg-[#F5F5F5] py-22 md:px-16">
       <h2
-        className={`${knewave.className} text-2xl italic font-bold text-center my-18 md:text-3xl`}
+        className={`${knewave.className} text-2xl  font-bold text-center my-18 md:text-4xl`}
       >
         Hotel Services
       </h2>
@@ -25,7 +25,7 @@ export default function HotelServices() {
             height={300}
             className="object-cover w-full rounded-lg h-120"
           />
-          <p className="absolute px-2 py-1 text-sm italic text-black bg-white rounded bottom-2 left-2 bg-opacity-60">
+          <p className="absolute px-2 py-1 text-sm text-black bg-white rounded bottom-2 left-2 bg-opacity-60">
             title.
           </p>
         </div>
@@ -38,7 +38,7 @@ export default function HotelServices() {
             height={300}
             className="object-cover w-full rounded-lg h-120"
           />
-          <p className="absolute px-2 py-1 text-sm italic text-black bg-white rounded bottom-2 left-2 bg-opacity-60">
+          <p className="absolute px-2 py-1 text-sm text-black bg-white rounded bottom-2 left-2 bg-opacity-60">
             title.
           </p>
         </div>
@@ -51,7 +51,7 @@ export default function HotelServices() {
             height={300}
             className="object-cover w-full rounded-lg h-120"
           />
-          <p className="absolute px-2 py-1 text-sm italic text-black bg-white rounded bottom-2 left-2 bg-opacity-60">
+          <p className="absolute px-2 py-1 text-sm text-black bg-white rounded bottom-2 left-2 bg-opacity-60">
             title.
           </p>
         </div>
@@ -68,7 +68,7 @@ export default function HotelServices() {
           height={450}
           className="object-cover w-full rounded-lg h-[450px]"
         />
-        <p className="mt-2 text-sm italic">Feature title.</p>
+        <p className="mt-2 text-sm ">Feature title.</p>
       </div>
 
       {/* Last two images side by side */}
@@ -81,7 +81,7 @@ export default function HotelServices() {
             height={600} // customized height
             className="object-cover w-full h-[600px] rounded-lg"
           />
-          <p className="mt-2 text-sm italic">Feature title.</p>
+          <p className="mt-2 text-sm ">Feature title.</p>
         </div>
 
         <div className="relative">
@@ -92,7 +92,7 @@ export default function HotelServices() {
             height={350}
             className="object-cover w-full h-[600px] rounded-lg"
           />
-          <p className="mt-2 text-sm italic">Feature title.</p>
+          <p className="mt-2 text-sm ">Feature title.</p>
         </div>
       </div>
     </section>

@@ -6,8 +6,8 @@ export default function HeroSection() {
       <Image
         src="/images/hero/Hero.jpg"
         alt="Hotel Room"
-        layout="fill"
-        objectFit="cover"
+        fill
+        style={{ objectFit: "cover" }}
         priority
       />
     </section>

@@ -65,7 +65,7 @@ export default function Header() {
         <LogoLink />
 
         {/* Desktop nav */}
-        <nav className={`${kalam.className} hidden space-x-8 md:flex`}>
+        <nav className={`hidden space-x-12 md:flex ${kalam.className}`}>
           {NavLinks}
         </nav>
 
@@ -82,7 +82,7 @@ export default function Header() {
       {/* Mobile menu panel */}
       {mobileMenuOpen && (
         <nav
-          className={`${kalam.className} md:hidden bg-[#EAE1D6] px-6 pb-6 space-y-6 flex flex-col items-center text-center`}
+          className={`md:hidden bg-[#EAE1D6] px-6 pb-6 space-y-6 flex flex-col items-center text-center ${kalam.className}`}
         >
           {NavLinks}
         </nav>

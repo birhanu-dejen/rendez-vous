@@ -8,9 +8,9 @@ export const metadata = {
 
 export default function GalleryPage() {
   return (
-    <div className="max-w-6xl mx-auto space-y-10 py-35 ">
-      {/* First row: two images side by side (50% each) */}
-      <div className="flex gap-6">
+    <div className="max-w-[calc(100vw-48px)] mx-auto  md:px-10 space-y-10 py-[35px]">
+      {/* First row: two images side by side on md+, stacked on mobile */}
+      <div className="flex flex-col gap-6 md:flex-row">
         <div className="flex-1">
           <Image
             src="/images/gallery/gallery1.jpg"
@@ -42,8 +42,8 @@ export default function GalleryPage() {
         />
       </div>
 
-      {/* Third row: three images side by side */}
-      <div className="flex gap-14">
+      {/* Third row: three images side by side on md+, stacked on mobile */}
+      <div className="flex flex-col md:flex-row gap-14">
         <div className="flex-1">
           <Image
             src="/images/gallery/gallery4.jpg"
@@ -73,9 +73,9 @@ export default function GalleryPage() {
         </div>
       </div>
 
-      {/* Fourth row: single image 1/3 width on left, empty right */}
-      <div className="flex">
-        <div className="w-1/3">
+      {/* Fourth row: single image 1/3 width on md+, full width on mobile */}
+      <div className="flex flex-col md:flex-row">
+        <div className="w-full md:w-1/3">
           <Image
             src="/images/gallery/gallery7.jpg"
             alt="Gallery image 7"
@@ -84,7 +84,7 @@ export default function GalleryPage() {
             className="object-cover w-full rounded-lg h-110"
           />
         </div>
-        <div className="w-2/3"></div>
+        <div className="w-full md:w-2/3"></div>
       </div>
     </div>
   );
