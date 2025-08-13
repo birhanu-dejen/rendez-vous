@@ -25,8 +25,8 @@ export default function CallToAction() {
         <p
           className={`mb-8 text-justify text-lg md:text-3xl ${kalam.className}`}
         >
-          Whether you're traveling alone, with family, or on business, our rooms
-          provide the essentials for a restful night in Addis Ababa.
+          Whether you&apos;re traveling alone, with family, or on business, our
+          rooms provide the essentials for a restful night in Addis Ababa.
         </p>
 
         {/* Footer line */}
