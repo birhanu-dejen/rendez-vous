@@ -12,7 +12,7 @@ const knewave = Knewave({
 
 export default function CallToAction() {
   return (
-    <section className="bg-[#EAE1D6] py-12 px-6 md:py-25 md:px-6">
+    <section className="bg-[#EAE1D6] py-6  px-6 md:py-25 md:px-6">
       <div className={`max-w-3xl mx-auto text-center ${kalam.className}`}>
         {/* Title */}
         <h2
@@ -22,7 +22,9 @@ export default function CallToAction() {
         </h2>
 
         {/* Main text */}
-        <p className={`mb-8 text-lg md:text-3xl ${kalam.className}`}>
+        <p
+          className={`mb-8 text-justify text-lg md:text-3xl ${kalam.className}`}
+        >
           Whether you're traveling alone, with family, or on business, our rooms
           provide the essentials for a restful night in Addis Ababa.
         </p>

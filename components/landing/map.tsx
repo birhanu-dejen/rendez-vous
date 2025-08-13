@@ -6,11 +6,11 @@ const knewave = Knewave({
 });
 export default function MapSection() {
   return (
-    <section className="bg-[#FAF6F0] py-16 px-6">
+    <section className="bg-[#FAF6F0] py-10 md:py-16 px-6">
       <div className="mx-auto max-w-7xl">
         {/* Title */}
         <h2
-          className={`${knewave.className} mb-10 text-4xl font-bold  text-center text-black`}
+          className={`${knewave.className} mb-4 md:mb-10 text-4xl font-bold  text-center text-black`}
         >
           Find Us
         </h2>
@@ -41,7 +41,12 @@ export default function MapSection() {
             <p className="mb-4 text-gray-700">📞 +251903232323</p>
             <p className="mb-4 text-gray-700">📞+251911252610</p>
 
-            <p className="mb-6 text-gray-700">✉️Justteshome3@gmail.com </p>
+            <p className="mb-6 text-gray-700">
+              <span className="whitespace-nowrap">
+                📧 Justteshome3@gmail.com
+              </span>
+            </p>
+
             <a
               href="https://maps.google.com/?q=Rendez-Vous+Hotel+Addis+Ababa"
               target="_blank"

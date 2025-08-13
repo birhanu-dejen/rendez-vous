@@ -1,15 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Inter, Kalam, Knewave } from "next/font/google";
+import { Kalam, Knewave } from "next/font/google";
 import Footer from "@/components/layout/footer";
 import Header from "@/components/layout/header";
-import { Dancing_Script } from "next/font/google";
 
-const dancingScript = Dancing_Script({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-dancing-script",
-});
 const knewave = Knewave({
   subsets: ["latin"],
   weight: ["400"],
@@ -20,10 +14,6 @@ const kalam = Kalam({
   subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-kalam",
-});
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
@@ -67,10 +57,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html
-      lang="en"
-      className={`${inter.variable} ${kalam.variable} ${dancingScript.variable} ${knewave.variable}`}
-    >
+    <html lang="en" className={`${kalam.variable} ${knewave.variable}`}>
       <body className="bg-[#FAF6F0] font-kalam">
         <Header />
         {children}

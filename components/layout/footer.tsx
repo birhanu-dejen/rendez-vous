@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className={`bg-[#2E3E50] text-white py-10 md:py-20 px-8 flex flex-col-reverse md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-12 border-t border-white ${kalam.className}`}
+      className={`bg-[#2E3E50] text-white py-6 md:py-20 px-8 flex flex-col-reverse md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-12 border-t border-white ${kalam.className}`}
     >
       {/* Left side - copyright */}
       <p
@@ -20,7 +20,7 @@ export default function Footer() {
 
       {/* Right side - contact info */}
       <div
-        className={`py-2 text-xl font-light text-center md:ml-80 text-gray-200`}
+        className={`pb-14 md:pb-2 text-xl font-light text-center md:ml-80 text-gray-200`}
       >
         <p className={`py-2 text-xl md:text-4xl ${kalam.className}`}>
           Contact Us

@@ -9,19 +9,16 @@ const knewave = Knewave({
 });
 const Description = () => {
   return (
-    <section className="bg-[#2E3E50] text-white py-10 px-4 sm:px-8 md:px-16 lg:px-24">
+    <section className="bg-[#2E3E50] text-white py-3 md:py-10 px-4 sm:px-8 md:px-16 lg:px-24">
       <div
         className={`max-w-4xl mx-auto text-center md:max-w-5xl ${kalam.className}`}
       >
         <h2
-          className={`${knewave.className} mb-4 text-4xl font-bold text-white text-center `}
+          className={`${knewave.className} mb-4 text-2xl md:text-4xl font-bold text-white text-center `}
         >
           RENDEZ-VOUS Hotel
         </h2>
-        <p
-          style={{ wordSpacing: "8px" }}
-          className="mb-6 text-xl text-justify text-gray-300 md:text-3xl"
-        >
+        <p className="mb-6 text-base text-justify text-gray-300 md:text-3xl md:word-spacing">
           RENDEZ-VOUS Hote lin Addis Ababa Your Comfortable Stay in the Capital
           City RENDEZ-VOUS Hotel is one of the top hospitality choices in Addis
           Ababa, offering guests a clean, quiet, and comfortable experience at

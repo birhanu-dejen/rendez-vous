@@ -9,9 +9,9 @@ const knewave = Knewave({
 
 export default function HotelServices() {
   return (
-    <section className="px-4 bg-[#F5F5F5] py-12 md:px-16">
+    <section className="px-4 bg-[#FAF6F0] py-2 md:px-16">
       <h2
-        className={`${knewave.className} text-2xl font-bold text-center my-6 md:text-4xl md:my-18`}
+        className={`${knewave.className} text-2xl font-bold text-center mb-4 md:text-4xl md:my-18`}
       >
         Hotel Services
       </h2>

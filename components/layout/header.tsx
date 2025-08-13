@@ -16,7 +16,7 @@ export default function Header() {
 
   const isActive = (path: string) => pathname === path;
 
-  const baseClasses = "text-[#333333] text-3xl hover:text-blue-600"; // removed font-kalam here
+  const baseClasses = " text-xl text-[#333333] md:text-3xl hover:text-blue-600"; // removed font-kalam here
   const activeClasses = "underline text-blue-600";
 
   const toggleMobileMenu = () => setMobileMenuOpen((open) => !open);
@@ -60,7 +60,7 @@ export default function Header() {
 
   return (
     <header className="bg-[#EAE1D6]">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-14 h-[80px] md:h-[120px]">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-14 h-[65px] md:h-[120px]">
         {/* Logo */}
         <LogoLink />
 
@@ -82,7 +82,7 @@ export default function Header() {
       {/* Mobile menu panel */}
       {mobileMenuOpen && (
         <nav
-          className={`md:hidden bg-[#EAE1D6] px-6 pb-6 space-y-6 flex flex-col items-center text-center ${kalam.className}`}
+          className={`md:hidden  bg-[#EAE1D6] px-6 pb-6 space-y-6 flex flex-col items-center text-center ${kalam.className}`}
         >
           {NavLinks}
         </nav>
